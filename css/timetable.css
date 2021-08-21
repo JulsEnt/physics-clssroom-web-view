@@ -1,0 +1,65 @@
+.ccontainer{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+.cad{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+p{
+    text-align: center;
+}
+.cad:hover{
+    transform: scale(0.8);
+}
+.timepic{
+    width: 100%;
+    height: 250px;
+    background-color: chocolate;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+}
+@media screen and  (min-width: 500px){
+    .ccontainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cad{
+        grid-template-columns: 60%;
+    }   
+}
+@media screen and  (min-width: 620px){
+    .ccontainer{
+        grid-template-columns: repeat(2, 1fr);
+    }  
+    .cad{
+        grid-template-columns: 80%;
+    }   
+    
+}
+@media screen and  (min-width: 800px){
+    .ccontainer{
+        grid-template-columns: repeat(3, 1fr);
+    }  
+    .cad{
+        grid-template-columns: 80%;
+    }   
+}
+@media screen and  (min-width: 900px){
+    .ccontainer{
+        grid-template-columns: repeat(4, 1fr);
+    }  
+    .cad{
+        grid-template-columns: 90%;
+    }   
+    
+}
